@@ -61,8 +61,17 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
 
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="381dp"
+                            android:layout_height="184dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/coffee_is_a_language_in_itself___2_"
+                            tools:layout_editor_absoluteY="127dp" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
