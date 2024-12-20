@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MochaAlaa"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.map"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.cart"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.profile"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Game"
+            android:exported="false" />
+        <activity
             android:name=".Activity.activity_login"
             android:exported="false" />
         <activity

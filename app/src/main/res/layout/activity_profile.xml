@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.profile" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5">
+
+        <Button
+            android:id="@+id/logOut"
+            android:layout_width="365dp"
+            android:layout_height="67dp"
+
+            android:layout_marginBottom="36dp"
+            android:text="LOG OUT"
+            android:textColor="#09502f"
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            android:background="#f1e9e5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/logoutBG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profilebackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logOutProfileicon"
+            android:layout_width="209dp"
+            android:layout_height="153dp"
+            android:src="@drawable/userprofile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userNameLogOut"
+            android:layout_width="198dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="User Name"
+            android:textColor="#09502f"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/logOutProfileicon"
+            app:layout_constraintStart_toStartOf="@+id/logOutProfileicon"
+            app:layout_constraintTop_toBottomOf="@+id/logOutProfileicon" />
+
+        <TextView
+            android:id="@+id/emailViewLogout"
+            android:layout_width="262dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="userName243@gmail.com"
+            android:textColor="#3e2623"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/userNameLogOut"
+            app:layout_constraintStart_toStartOf="@+id/userNameLogOut"
+            app:layout_constraintTop_toBottomOf="@+id/userNameLogOut" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/profile_box_background"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailViewLogout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/notificationiconLogOut"
+                        android:layout_width="113dp"
+                        android:layout_height="105dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/notification__1_" />
+
+                    <TextView
+                        android:id="@+id/notificanText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="notifications"
+                        android:textAlignment="center"
+                        android:textColor="#3e2623"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/settingIconLogOut"
+                        android:layout_width="117dp"
+                        android:layout_height="104dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/settings__1_" />
+
+                    <TextView
+                        android:id="@+id/settingText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="settings"
+                        android:textAlignment="center"
+                        android:textColor="#3e2623"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/walletIconLogOut"
+                        android:layout_width="120dp"
+                        android:layout_height="104dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/wallet" />
+
+                    <TextView
+                        android:id="@+id/walletText"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:text="payment"
+                        android:textAlignment="center"
+                        android:textColor="#3e2623"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/linebetween1and2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="#f8f7f2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/passwordTextLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Password"
+                    android:textColor="#3e2623"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/changePasswordTextLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="change?"
+                    android:textAlignment="textEnd"
+                    android:textColor="#3e2623"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/lineBetweenPassAndPhone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="#f8f7f2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/PhoneTextLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Phone"
+                    android:textColor="#3e2623"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editPhoneLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+962793839730"
+                    android:textAlignment="textEnd"
+                    android:textColor="#3e2623"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/adressTextLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="Address"
+                    android:textColor="#3e2623"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/changeAdressLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="abc.st-Amman_Jordan"
+                    android:textAlignment="textEnd"
+                    android:textColor="#3e2623"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ordersTextLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:text="orders"
+                    android:textColor="#3e2623"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editOrdersTextLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:text="archive"
+                    android:textAlignment="textEnd"
+                    android:textColor="#3e2623"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/postalTextlogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="Postal"
+                    android:textColor="#3e2623"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editPostalLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="32-653"
+                    android:textAlignment="textEnd"
+                    android:textColor="#3e2623"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="#f8f7f2" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

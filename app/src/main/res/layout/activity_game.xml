@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Game">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="29dp"
+        android:background="#f1e9e5"
+        tools:layout_editor_absoluteY="-25dp">
+
+        <TextView
+            android:id="@+id/rolePlayBtn"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:background="@drawable/gamebtn_background"
+            android:ems="10"
+            android:gravity="center_horizontal|center"
+            android:inputType="textMultiLine"
+            android:text="Role Play Questions"
+            android:fontFamily="@font/newfont"
+            android:textColor="#09502f"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.671" />
+
+        <TextView
+            android:id="@+id/whatWouldYouBtn"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/gamebtn_background"
+            android:ems="10"
+            android:gravity="center_horizontal|center"
+            android:inputType="textMultiLine"
+            android:text="What Would
+
+You Do If…?"
+            android:fontFamily="@font/newfont"
+            android:textColor="#09502f"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.355" />
+
+        <TextView
+            android:id="@+id/finishTheSentenceBtn"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/gamebtn_background"
+            android:ems="10"
+            android:gravity="center_horizontal|center"
+            android:inputType="textMultiLine"
+            android:text="Finish the Sentence"
+            android:fontFamily="@font/newfont"
+            android:textColor="#09502f"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.969" />
+
+        <TextView
+            android:id="@+id/storyBuildingBtn"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="260dp"
+            android:layout_weight="1"
+            android:background="@drawable/gamebtn_background"
+            android:ems="10"
+            android:gravity="center_horizontal|center"
+            android:inputType="textMultiLine"
+            android:text="Story Building
+            Game"
+            android:fontFamily="@font/newfont"
+            android:textColor="#09502f"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.969" />
+
+        <TextView
+            android:id="@+id/wouldYouRatherBtn"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/gamebtn_background"
+            android:ems="10"
+            android:fontFamily="@font/newfont"
+            android:gravity="center_horizontal|center"
+            android:inputType="textMultiLine"
+            android:text="Would You
+             Rather?"
+            android:textColor="#09502f"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.355" />
+
+        <TextView
+            android:id="@+id/ifYouCouldBtn"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/gamebtn_background"
+            android:ems="10"
+            android:gravity="center_horizontal|center"
+            android:inputType="textMultiLine"
+            android:text="If You
+             Could..."
+            android:fontFamily="@font/newfont"
+            android:textColor="#09502f"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.672" />
+
+        <TextView
+            android:id="@+id/gameTextDisplay"
+            android:layout_width="410dp"
+            android:layout_height="245dp"
+
+            android:textStyle="bold"
+            android:textColor="#09502f"
+            android:fontFamily="@font/newfont"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:hint="Dive Into Fun and Make Lasting Memories!"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="244dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/thisOrThatBtn"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:background="@drawable/gamebtn_background"
+            android:ems="10"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="1dp"
+            android:gravity="center_horizontal|center"
+            android:inputType="textMultiLine"
+            android:text="This or
+            That?"
+            android:fontFamily="@font/newfont"
+            android:textColor="#09502f"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
+
+        <TextView
+            android:id="@+id/whoKnowsMeBtn"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:background="@drawable/gamebtn_background"
+            android:ems="10"
+            android:gravity="center_horizontal|center"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="1dp"
+            android:inputType="textMultiLine"
+            android:text="Who Knows Me Best?"
+            android:fontFamily="@font/newfont"
+            android:textColor="#09502f"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.004"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.517" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
