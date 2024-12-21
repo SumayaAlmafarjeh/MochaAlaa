@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+
 }
 
 android {
@@ -41,5 +42,6 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation(libs.glide)
     annotationProcessor(libs.glide.compiler)
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
 
 }

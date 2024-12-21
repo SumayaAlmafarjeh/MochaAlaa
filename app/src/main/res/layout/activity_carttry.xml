@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".carttry">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1e9e5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header -->
+            <TextView
+                android:id="@+id/tvCartTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="My Cart"
+                android:textSize="30sp"
+                android:textColor="#09502f"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Items Section -->
+            <LinearLayout
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <!-- First Item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="#f8f7f2"
+
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivItem1"
+                        android:layout_width="87dp"
+                        android:layout_height="159dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/iced_coffee1" />
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="156dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="8dp">
+
+                        <TextView
+                            android:id="@+id/tvItem1Name"
+                            android:layout_width="134dp"
+                            android:layout_height="74dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Iced coffee"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvItem1Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.15 JD"
+                            android:textColor="#09502f"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <!-- Quantity Controls -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+
+                        <ImageButton
+                            android:id="@+id/btnDecreaseItem1"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/minus"
+
+                            android:contentDescription="Decrease quantity" />
+
+                        <TextView
+                            android:id="@+id/tvItem1Quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="8dp"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="24sp" />
+
+                        <ImageButton
+                            android:id="@+id/btnIncreaseItem1"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/plus"
+                            android:contentDescription="Increase quantity" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--second item-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="#f8f7f2"
+
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivItem11"
+                        android:layout_width="87dp"
+                        android:layout_height="159dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/matcha" />
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="156dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="8dp">
+
+                        <TextView
+                            android:id="@+id/tvItem1Name11"
+                            android:layout_width="140dp"
+                            android:layout_height="76dp"
+                            android:layout_marginTop="16dp"
+                            android:text="spanish latte"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvItem1Price11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.50 JD"
+                            android:textColor="#09502f"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <!-- Quantity Controls -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+
+                        <ImageButton
+                            android:id="@+id/btnDecreaseItem11"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/minus"
+
+                            android:contentDescription="Decrease quantity" />
+
+                        <TextView
+                            android:id="@+id/tvItem1Quantity11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="8dp"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="24sp" />
+
+                        <ImageButton
+                            android:id="@+id/btnIncreaseItem11"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/plus"
+                            android:contentDescription="Increase quantity" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="#f8f7f2"
+
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivItem13"
+                        android:layout_width="101dp"
+                        android:layout_height="85dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/foodbf" />
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="156dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="8dp">
+
+                        <TextView
+                            android:id="@+id/tvItem1Name33"
+                            android:layout_width="136dp"
+                            android:layout_height="68dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Croissant"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvItem1Price33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2.25 JD"
+                            android:layout_marginTop="16dp"
+                            android:textColor="#09502f"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <!-- Quantity Controls -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+
+                        <ImageButton
+                            android:id="@+id/btnDecreaseItem13"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/minus"
+
+                            android:contentDescription="Decrease quantity" />
+
+                        <TextView
+                            android:id="@+id/tvItem1Quantity33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="8dp"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="24sp" />
+
+                        <ImageButton
+                            android:id="@+id/btnIncreaseItem13"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/plus"
+                            android:contentDescription="Increase quantity" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Add similar layouts for additional items -->
+
+            </LinearLayout>
+
+            <!-- Special Requests -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/tvSpecialRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special request"
+                    android:textSize="16sp"
+                    android:textColor="#3e2623" />
+
+                <EditText
+                    android:id="@+id/etSpecialRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Anything else we need to know?"
+                    android:background="#f8f7f2"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Payment Summary -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/tvPaymentSummaryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment summary"
+                    android:textSize="16sp"
+                    android:textColor="#3e2623"
+                    android:fontFamily="sans-serif-medium" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tvSubtotal90"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Delivery fees"
+                        android:textSize="14sp"
+                        android:textColor="#3e2623" />
+
+                    <TextView
+                        android:id="@+id/tvSubtotalValue90"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 JD"
+                        android:textSize="14sp"
+                        android:textColor="#3e2623" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tvSubtotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Subtotal"
+                        android:textSize="14sp"
+                        android:textColor="#3e2623" />
+
+                    <TextView
+                        android:id="@+id/tvSubtotalValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JOD 2.65"
+                        android:textSize="14sp"
+                        android:textColor="#3e2623" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total amount"
+                        android:textSize="16sp"
+                        android:textColor="#3e2623"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:id="@+id/tvTotalValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JOD 3.77"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#09502f" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Payment Options -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/tvPaymentOptions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Options"
+                    android:textSize="16sp"
+                    android:textColor="#3e2623"
+                    android:fontFamily="sans-serif-medium" />
+
+                <RadioGroup
+                    android:id="@+id/rgPaymentOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+
+
+                        <RadioButton
+                            android:id="@+id/rbCreditCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Credit Card"
+                            android:textStyle="bold"
+                            android:textColor="#3e2623"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+
+                        <RadioButton
+                            android:id="@+id/rbCashOnDelivery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Cash on Delivery"
+                            android:textStyle="bold"
+                            android:textColor="#3e2623"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+
+                        <RadioButton
+                            android:id="@+id/rbWallet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="E-Wallet"
+                            android:textStyle="bold"
+                            android:textColor="#3e2623"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Checkout Button -->
+            <Button
+                android:id="@+id/btnCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkout"
+                android:backgroundTint="#09502f"
+                android:textColor="#f8f7f2"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

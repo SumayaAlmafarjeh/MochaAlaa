@@ -29,15 +29,15 @@
 
                     <ImageView
                         android:id="@+id/profilehomePage"
-                        android:layout_width="66dp"
-                        android:layout_height="64dp"
+                        android:layout_width="88dp"
+                        android:layout_height="70dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="28dp"
                         app:layout_constraintBottom_toBottomOf="@+id/textView6"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/usernameHomePage"
-                        app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/user__2_" />
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/userprofile" />
 
                     <TextView
                         android:id="@+id/usernameHomePage"
@@ -57,9 +57,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Search and order"
+                        android:text="Taste the Magic, Live the Moment"
                         android:textColor="#1F4D2D"
-                        android:textSize="20sp"
+                        android:textSize="16sp"
                         app:layout_constraintStart_toStartOf="@+id/usernameHomePage"
                         app:layout_constraintTop_toBottomOf="@+id/usernameHomePage" />
 
