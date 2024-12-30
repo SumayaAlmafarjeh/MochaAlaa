@@ -2,6 +2,7 @@ package com.example.mochaalaa.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.mochaalaa.R;
 import com.example.mochaalaa.carttry;
+import com.example.mochaalaa.loginpage;
 
 public class IntroActivity extends AppCompatActivity {
 
@@ -27,13 +29,11 @@ public class IntroActivity extends AppCompatActivity {
             return insets;
         });
 
-        ConstraintLayout startBtn=findViewById(R.id.startBtn);
-        startBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                startActivity(new Intent(IntroActivity.this, carttry.class));
+        new Handler().postDelayed(() -> {
 
-            }
-        });
+            startActivity(new Intent(IntroActivity.this, loginpage.class));
+
+            finish();
+        }, 2000);
     }
 }

@@ -24,7 +24,7 @@
             android:ems="10"
             android:gravity="center_horizontal|center"
             android:inputType="textMultiLine"
-            android:text="Role Play Questions"
+            android:text="Roole Play Questions"
             android:fontFamily="@font/newfont"
             android:textColor="#09502f"
             android:textSize="24dp"
