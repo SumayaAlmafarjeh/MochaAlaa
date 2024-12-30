@@ -160,14 +160,14 @@ public class Game extends AppCompatActivity {
         });
         gameTextDisplay = findViewById(R.id.gameTextDisplay);
 
-        EditText rolePlayBtn = findViewById(R.id.rolePlayBtn);
-        EditText whatWouldYouBtn = findViewById(R.id.whatWouldYouBtn);
-        EditText finishTheSentenceBtn = findViewById(R.id.finishTheSentenceBtn);
-        EditText storyBuildingBtn = findViewById(R.id.storyBuildingBtn);
-        EditText wouldYouRatherBtn = findViewById(R.id.wouldYouRatherBtn);
-        EditText ifYouCouldBtn = findViewById(R.id.ifYouCouldBtn);
-        EditText thisOrThatBtn = findViewById(R.id.thisOrThatBtn);
-        EditText whoKnowsMeBtn = findViewById(R.id.whoKnowsMeBtn);
+        TextView rolePlayBtn = findViewById(R.id.rolePlayBtn);
+        TextView whatWouldYouBtn = findViewById(R.id.whatWouldYouBtn);
+        TextView finishTheSentenceBtn = findViewById(R.id.finishTheSentenceBtn);
+        TextView storyBuildingBtn = findViewById(R.id.storyBuildingBtn);
+        TextView wouldYouRatherBtn = findViewById(R.id.wouldYouRatherBtn);
+        TextView ifYouCouldBtn = findViewById(R.id.ifYouCouldBtn);
+        TextView thisOrThatBtn = findViewById(R.id.thisOrThatBtn);
+        TextView whoKnowsMeBtn = findViewById(R.id.whoKnowsMeBtn);
         rolePlayBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
