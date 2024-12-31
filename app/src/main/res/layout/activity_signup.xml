@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.activity_login">
+    tools:context=".SignupActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -85,7 +85,8 @@
                 android:text="Password"
                 android:textColor="#09502f"
                 android:textSize="24dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                />
 
             <EditText
                 android:id="@+id/editpasswordSignUp"

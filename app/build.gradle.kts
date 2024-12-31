@@ -42,6 +42,8 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation(libs.glide)
     annotationProcessor(libs.glide.compiler)
+   // implementation ("com.google.android.material:material:1.8.0")
     implementation("com.google.android.gms:play-services-maps:18.1.0")
+    //implementation ("androidx.recyclerview.recyclerview:1.1.0")
 
 }
