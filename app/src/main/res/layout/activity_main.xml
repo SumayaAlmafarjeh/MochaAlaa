@@ -45,7 +45,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:layout_marginTop="32dp"
-                        android:text="Hi Khaled"
+                        android:text="Hi Guest !"
                         android:textColor="#372E20"
                         android:textSize="30sp"
                         android:textStyle="bold"

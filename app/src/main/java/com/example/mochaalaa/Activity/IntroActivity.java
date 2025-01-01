@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.mochaalaa.R;
 import com.example.mochaalaa.carttry;
-import com.example.mochaalaa.loginpage;
+import com.example.mochaalaa.Loginpage;
 
 public class IntroActivity extends AppCompatActivity {
 
@@ -31,7 +31,7 @@ public class IntroActivity extends AppCompatActivity {
 
         new Handler().postDelayed(() -> {
 
-            startActivity(new Intent(IntroActivity.this, loginpage.class));
+            startActivity(new Intent(IntroActivity.this, Loginpage.class));
 
             finish();
         }, 2000);

@@ -1,18 +1,17 @@
 package com.example.mochaalaa;
 
+import android.os.Bundle;
+import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class LoginActivity extends AppCompatActivity {
+public class Loginpage extends AppCompatActivity {
 
     private EditText editEmail, editPassword;
     private DatabaseHelper db;
@@ -27,13 +26,8 @@ public class LoginActivity extends AppCompatActivity {
         editEmail = findViewById(R.id.editEmailLogin);
         editPassword = findViewById(R.id.editpasswordLogin);
 
-        findViewById(R.id.loginbtn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                handleLogin();
-            }
-        });
-/*
+        findViewById(R.id.loginbtn).setOnClickListener(v -> handleLogin());
+  /*
         TextView signUpText = findViewById(R.id.textView5);
         signUpText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,22 +39,19 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-     */
+
 
 
         TextView forgotPassText = findViewById(R.id.forgotpass);
-        forgotPassText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(LoginActivity.this, "Forgot Password feature not implemented yet.", Toast.LENGTH_SHORT).show();
-                // Implement forgot password feature if required
-            }
-        });
+        forgotPassText.setOnClickListener(v -> {
+            Toast.makeText(Loginpage.this, "Forgot Password feature not implemented yet.", Toast.LENGTH_SHORT).show();
+            // Implement forgot password feature if required
+        });*/
     }
     public void navigateToSignUp(View view) {
         // Navigate to SignupActivity
-        Toast.makeText(LoginActivity.this, "Sign Up clicked!", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+        Toast.makeText(Loginpage.this, "Sign Up clicked!", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(Loginpage.this, SignupActivity.class);
         startActivity(intent);
     }
     private void handleLogin() {
@@ -73,10 +64,13 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         if (db.checkUser(email, password)) {
-            Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show();
 
-            // Navigate to MainActivity
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            String userName = db.getUserName(email);
+            Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show();
+            //go to MainActivity
+            Intent intent = new Intent(Loginpage.this, MainActivity.class);
+            // Pass the name to MainActivity
+            intent.putExtra("USERNAME", userName); // Pass the name
             startActivity(intent);
             finish(); // Close LoginActivity
         } else {

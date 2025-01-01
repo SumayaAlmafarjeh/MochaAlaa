@@ -21,7 +21,7 @@
             android:name=".SignupActivity"
             android:exported="false" />
         <activity
-            android:name=".loginpage"
+            android:name=".Loginpage"
             android:exported="false" />
         <activity
             android:name=".infosetter"
@@ -38,9 +38,7 @@
         <activity
             android:name=".Activity.Game"
             android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
