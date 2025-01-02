@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +17,7 @@ public class CategoryPageActivity extends AppCompatActivity {
     private Button goToD5;
     private Button goToD6;
     private Button goToD7;
+    private ImageView goback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +87,15 @@ public class CategoryPageActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        goback=findViewById(R.id.icedgoback);
+        goback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to Iced Coffee Category Activity
+                Intent intent = new Intent(CategoryPageActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
