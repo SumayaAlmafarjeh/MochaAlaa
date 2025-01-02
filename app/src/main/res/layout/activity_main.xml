@@ -148,7 +148,8 @@
                                 android:layout_marginTop="8dp"
                                 android:text="Iced coffee"
                                 android:textAlignment="center"
-                                android:textColor="#372E20" />
+                                android:textColor="#372E20"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -280,7 +281,7 @@
                             android:layout_marginEnd="10dp"
                             app:cardCornerRadius="30dp">
 
-                            <include layout="@layout/card1" />
+                            <include layout="@layout/hot1" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
@@ -291,7 +292,7 @@
                             android:layout_marginEnd="10dp"
                             app:cardCornerRadius="30dp">
 
-                            <include layout="@layout/card1" />
+                            <include layout="@layout/hot1" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
@@ -303,7 +304,7 @@
                             android:layout_marginBottom="50dp"
                             app:cardCornerRadius="30dp">
 
-                            <include layout="@layout/card1" />
+                            <include layout="@layout/hot1" />
                         </androidx.cardview.widget.CardView>
 
                         <Button

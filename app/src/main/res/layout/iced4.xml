@@ -1,0 +1,56 @@
+<!-- res/layout/popular_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/icedit4img"
+        android:layout_width="115dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/iced4"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/icedit4name"
+        android:layout_width="137dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Classic Iced Americano"
+        android:textAlignment="center"
+        android:textColor="#372E20"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/icedit4price"
+        android:layout_width="140dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="2.0 JD"
+        android:textAlignment="center"
+        android:textColor="#1F4D2D"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/icedit4Detail"
+        android:layout_width="133dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#1F4D2D"
+        android:gravity="center"
+        android:text="@string/view_detail"
+        android:textColor="#F1E9E5" />
+
+</LinearLayout>

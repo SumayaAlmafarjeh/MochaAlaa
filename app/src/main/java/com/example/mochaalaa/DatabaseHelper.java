@@ -22,7 +22,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COL_NAME = "NAME";
     private static final String COL_EMAIL = "EMAIL";
     private static final String COL_PASSWORD = "PASSWORD";
-
+/*
 
     //for category table
     public static final String CATEGORY_ID = "category_id";
@@ -35,7 +35,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String ITEM_PRICE = "item_price";
     public static final String ITEM_CATEGORY_ID = "category_id";
 
-
+*/
     public DatabaseHelper(Context context) {
 
         super(context, DATABASE_NAME, null, 1);
@@ -50,7 +50,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 COL_PASSWORD + " TEXT)";
         db.execSQL(createTable);
 
-        String CREATE_CATEGORIES_TABLE = "CREATE TABLE " + TABLE_CATEGORIES + " (" +
+       /* String CREATE_CATEGORIES_TABLE = "CREATE TABLE " + TABLE_CATEGORIES + " (" +
                 CATEGORY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 CATEGORY_NAME + " TEXT)";
         db.execSQL(CREATE_CATEGORIES_TABLE);
@@ -61,7 +61,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 ITEM_PRICE + " REAL, " +
                 ITEM_CATEGORY_ID + " INTEGER, " +
                 "FOREIGN KEY (" + ITEM_CATEGORY_ID + ") REFERENCES " + TABLE_CATEGORIES + "(" + CATEGORY_ID + "))";
-        db.execSQL(CREATE_ITEMS_TABLE);
+        db.execSQL(CREATE_ITEMS_TABLE);*/
     }
 
 
@@ -114,7 +114,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public Cursor getCategories() {
         SQLiteDatabase db = this.getReadableDatabase();
         return db.rawQuery("SELECT * FROM " + TABLE_CATEGORIES, null);
-    }*/
+    }
 public void insertSampleData() {
     SQLiteDatabase db = this.getWritableDatabase();
 
@@ -135,7 +135,7 @@ public void insertSampleData() {
         SQLiteDatabase db = this.getReadableDatabase();
         return db.rawQuery("SELECT * FROM " + TABLE_ITEMS + " WHERE " + ITEM_CATEGORY_ID + " = ?",
                 new String[]{String.valueOf(categoryId)});
-    }
+    }*/
 
 
 
