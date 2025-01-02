@@ -31,7 +31,7 @@ public class IntroActivity extends AppCompatActivity {
 
         new Handler().postDelayed(() -> {
 
-            startActivity(new Intent(IntroActivity.this, Loginpage.class));
+            startActivity(new Intent(IntroActivity.this, sweetscat.class));
 
             finish();
         }, 2000);

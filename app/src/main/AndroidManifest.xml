@@ -38,6 +38,13 @@
         <activity
             android:name=".Activity.Game"
             android:exported="false" />
+        <activity
+            android:name=".Activity.sweetCatActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.sweet1detail"
+            android:exported="false" />
 
         <activity
             android:name=".MainActivity"
@@ -51,6 +58,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
 
 
 
