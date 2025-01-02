@@ -43,6 +43,12 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".CategoryPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryHotCoffee"
+            android:exported="false" />
+        <activity
             android:name=".Activity.IntroActivity"
             android:exported="true">
             <intent-filter>

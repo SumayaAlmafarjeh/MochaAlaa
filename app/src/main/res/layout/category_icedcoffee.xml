@@ -58,7 +58,7 @@
                         android:padding="10dp"
                         app:cardCornerRadius="15dp">
 
-                        <include layout="@layout/popular_item" />
+                        <include layout="@layout/iced1" />
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -69,7 +69,7 @@
                         android:padding="10dp"
                         app:cardCornerRadius="15dp">
 
-                        <include layout="@layout/popular_item" />
+                        <include layout="@layout/iced2" />
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
@@ -87,7 +87,7 @@
                         android:padding="10dp"
                         app:cardCornerRadius="15dp">
 
-                        <include layout="@layout/popular_item" />
+                        <include layout="@layout/iced3" />
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -98,7 +98,7 @@
                         android:padding="10dp"
                         app:cardCornerRadius="15dp">
 
-                        <include layout="@layout/popular_item" />
+                        <include layout="@layout/iced4" />
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
@@ -116,7 +116,7 @@
                         android:padding="10dp"
                         app:cardCornerRadius="15dp">
 
-                        <include layout="@layout/popular_item" />
+                        <include layout="@layout/iced5" />
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -127,7 +127,7 @@
                         android:padding="10dp"
                         app:cardCornerRadius="15dp">
 
-                        <include layout="@layout/popular_item" />
+                        <include layout="@layout/iced6" />
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
@@ -146,19 +146,11 @@
                         android:padding="10dp"
                         app:cardCornerRadius="15dp">
 
-                        <include layout="@layout/popular_item" />
+                        <include layout="@layout/iced7" />
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="40dp"
-                        android:padding="10dp"
-                        app:cardCornerRadius="15dp">
 
-                        <include layout="@layout/popular_item" />
-                    </androidx.cardview.widget.CardView>
+
                 </LinearLayout>
 
             </LinearLayout>

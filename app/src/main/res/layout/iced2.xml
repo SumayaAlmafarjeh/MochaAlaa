@@ -1,34 +1,37 @@
 <!-- res/layout/popular_item.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp">
 
     <ImageView
-        android:id="@+id/popular_item_image"
-        android:layout_width="111dp"
-        android:layout_height="70dp"
+        android:id="@+id/icedit2img"
+        android:layout_width="116dp"
+        android:layout_height="77dp"
         android:layout_gravity="center"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/iced_coffee1" />
+        app:srcCompat="@drawable/iced2"
+        tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/popular_item_name"
-        android:layout_width="114dp"
+        android:id="@+id/icedit2name"
+        android:layout_width="137dp"
         android:layout_height="30dp"
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="Iced Caramel Latte"
+        android:text="Matcha Coffee Latte"
         android:textAlignment="center"
         android:textColor="#372E20"
         android:textSize="13sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/popular_item_price"
+        android:id="@+id/icedit2price"
         android:layout_width="140dp"
         android:layout_height="24dp"
         android:layout_gravity="center"
@@ -37,10 +40,11 @@
         android:text="3.5JD"
         android:textAlignment="center"
         android:textColor="#1F4D2D"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/viewDetail"
+        android:id="@+id/icedit2Detail"
         android:layout_width="133dp"
         android:layout_height="49dp"
         android:layout_gravity="center"
