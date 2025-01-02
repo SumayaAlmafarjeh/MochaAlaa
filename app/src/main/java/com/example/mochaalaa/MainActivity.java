@@ -10,22 +10,30 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mochaalaa.Activity.breakfastCatActivity;
+import com.example.mochaalaa.Activity.sweetCatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView usernameHomePage;
     private ImageView icedCoffee;
     private ImageView hotCoffee;
+    private ImageView SweetsCat;
+    private ImageView Breakfast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+
         BottomNavigationView bottomNav = findViewById(R.id.bottomNav);
         usernameHomePage = findViewById(R.id.usernameHomePage);
          icedCoffee = findViewById(R.id.catimg1);
         hotCoffee = findViewById(R.id.catimg2);
+        SweetsCat = findViewById(R.id.catimg4);
+        Breakfast = findViewById(R.id.catimg3);
         // Get the name from the intent
         String userName = getIntent().getStringExtra("USERNAME");
 
@@ -92,6 +100,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        SweetsCat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to Iced Coffee Category Activity
+                Intent intent = new Intent(MainActivity.this, sweetCatActivity.class);
+                startActivity(intent);
+            }
+        });
+       Breakfast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to Iced Coffee Category Activity
+                Intent intent = new Intent(MainActivity.this, breakfastCatActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
 

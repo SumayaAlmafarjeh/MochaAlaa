@@ -21,7 +21,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="Plain croissant"
+        android:text="croissant"
         android:textAlignment="center"
         android:textColor="#372E20"
         android:textSize="13sp"
@@ -40,7 +40,7 @@
         android:textSize="14sp" />
 
     <Button
-        android:id="@+id/viewDetail"
+        android:id="@+id/d39viewDetail"
         android:layout_width="133dp"
         android:layout_height="49dp"
         android:layout_gravity="center"

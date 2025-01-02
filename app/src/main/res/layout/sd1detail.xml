@@ -18,7 +18,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:gravity="center"
-            android:text="Chocolate Cake"
+            android:text="Croissant"
             android:textAlignment="center"
             android:textColor="#372E20"
             android:textSize="30sp"
@@ -32,7 +32,7 @@
 
 
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/d16" />
+            app:srcCompat="@drawable/d39" />
 
         <TextView
             android:id="@+id/line"
@@ -60,7 +60,7 @@
             android:layout_marginTop="4dp"
 
             android:padding="10dp"
-            android:text="Cake Size"
+            android:text="Croissant flavor"
             android:textAlignment="viewStart"
             android:textColor="#372E20 "
             android:textSize="25sp"
@@ -83,7 +83,7 @@
                 android:backgroundTint="#1F4D2D"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="small"
+                android:text="chocolate"
                 android:textColor="#F1E9E5" />
 
             <Button
@@ -96,7 +96,7 @@
                 android:backgroundTint="#1F4D2D"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Medium"
+                android:text="Vanilla"
                 android:textColor="#F1E9E5" />
 
             <Button
@@ -107,90 +107,57 @@
                 android:backgroundTint="#1F4D2D"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Large"
+                android:text="Caramel"
+                android:textColor="#F1E9E5" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/size1"
+            android:layout_width="380dp"
+            android:layout_height="53dp"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/low1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#1F4D2D"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Strawberry"
+                android:textColor="#F1E9E5" />
+
+            <Button
+                android:id="@+id/med1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#1F4D2D"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Custard"
+                android:textColor="#F1E9E5" />
+
+            <Button
+                android:id="@+id/high1"
+                android:layout_width="118dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="#1F4D2D"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Original"
                 android:textColor="#F1E9E5" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="290dp"
-            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/customize"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="4dp"
-
-                android:padding="10dp"
-                android:text="How Would You Like Your Cake ?"
-                android:textAlignment="viewStart"
-                android:textColor="#372E20 "
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="392dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="163dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="10dp"
-                    android:text="Chocolate"
-                    android:textSize="20sp"
-
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/lowSugar"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="10dp"
-                        android:layout_weight="1"
-                        android:backgroundTint="#1F4D2D"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="Dark"
-                        android:textColor="#F1E9E5" />
-
-
-
-                    <Button
-                        android:id="@+id/highSugar"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:backgroundTint="#1F4D2D"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="Milk"
-                        android:textColor="#F1E9E5" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-
-
-
-
-                </LinearLayout>
 
             </LinearLayout>
 
@@ -199,7 +166,7 @@
 
 
     <Button
-        android:id="@+id/AddToCart"
+        android:id="@+id/Add"
         android:layout_width="175dp"
         android:layout_height="53dp"
         android:layout_gravity="right"

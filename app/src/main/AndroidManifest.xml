@@ -45,9 +45,57 @@
         <activity
             android:name=".Activity.sweet1detail"
             android:exported="false" />
+        <activity
+            android:name=".Activity.sweet2detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.sweet3detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.sweet4detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.sweet5detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.sweet6detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.sweet7detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.sweet8detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.bf2detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.bf3detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.bf4detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.bf5detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.bf6detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.bf7detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.bf8detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.breakfastCatActivity"
+            android:exported="false" />
 
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.sd1detail"
             android:exported="false" />
         <activity
             android:name=".CategoryPageActivity"
