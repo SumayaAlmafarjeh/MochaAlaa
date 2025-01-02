@@ -8,7 +8,8 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
 
-    android:padding="10dp">
+    android:padding="10dp"
+    tools:context=".CategoryHotCoffee">
 
     <ImageView
         android:id="@+id/hotit1img"

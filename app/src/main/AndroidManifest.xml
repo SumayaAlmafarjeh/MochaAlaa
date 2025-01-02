@@ -24,6 +24,37 @@
             android:name=".Loginpage"
             android:exported="false" />
         <activity
+            android:name=".DetailHot1"
+            android:exported="false" />
+        <activity
+            android:name=".DetailHot2"
+            android:exported="false" />
+        <activity
+            android:name=".DetailHot3"
+            android:exported="false" />
+        <activity
+            android:name=".DetailIced1"
+            android:exported="false" />
+        <activity
+            android:name=".DetailIced2"
+            android:exported="false" />
+        <activity
+            android:name=".DetailIced3"
+            android:exported="false" />
+        <activity
+            android:name=".DetailIced4"
+            android:exported="false" />
+        <activity
+            android:name=".DetailIced5"
+            android:exported="false" />
+        <activity
+            android:name=".DetailIced6"
+            android:exported="false" />
+        <activity
+            android:name=".DetailIced7"
+            android:exported="false" />
+
+        <activity
             android:name=".infosetter"
             android:exported="false" />
         <activity
