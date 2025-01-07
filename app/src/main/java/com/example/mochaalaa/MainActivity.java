@@ -64,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
         bottomNav.findViewById(R.id.profile).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_profile); // Switch to Profile layout
+                Intent intent = new Intent(MainActivity.this, profile.class);
+                startActivity(intent);
             }
         });
 

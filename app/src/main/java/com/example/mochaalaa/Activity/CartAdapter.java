@@ -36,6 +36,7 @@ public class CartAdapter  extends RecyclerView.Adapter<CartAdapter.CartViewHolde
             holder.sugarTextView.setText("Sugar: " + currentItem.getSugar());
             holder.toppingTextView.setText("Toppings: " + currentItem.getTopping());
             holder.itemPrice.setText(" " + currentItem.getPrice());
+
         }
 
         @Override

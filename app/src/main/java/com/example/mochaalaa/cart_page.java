@@ -1,7 +1,9 @@
 package com.example.mochaalaa;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -24,6 +26,7 @@ public class cart_page extends AppCompatActivity {
     private ImageView goback;
     private RecyclerView recyclerView;
     private CartAdapter cartAdapter;
+    private TextView thankYouMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +54,14 @@ public class cart_page extends AppCompatActivity {
         double totalPrice =subtotalPrice+2;
         tvTotalValue.setText("JOD " + String.format("%.2f", totalPrice));
 
+        findViewById(R.id.btnPayNow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showThankYouPopup();
+
+            }
+        });
+
 
 
 
@@ -61,5 +72,22 @@ public class cart_page extends AppCompatActivity {
             total += item.getPrice();
         }
         return total;
+    }
+    private void showThankYouPopup() {
+        // Create a Dialog
+        Dialog dialog = new Dialog(cart_page.this);
+        dialog.setContentView(R.layout.activity_popupthankyou);
+        dialog.setCancelable(false); // Prevent dialog from being dismissed by tapping outside
+
+        // Show the dialog
+        dialog.show();
+
+        // Automatically dismiss the dialog after 3 seconds
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                dialog.dismiss();
+            }
+        }, 5000); // 3000 milliseconds = 3 seconds
     }
 }

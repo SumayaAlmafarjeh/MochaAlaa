@@ -18,6 +18,9 @@
         android:theme="@style/Theme.MochaAlaa"
         tools:targetApi="31">
         <activity
+            android:name=".popupthankyou"
+            android:exported="false" />
+        <activity
             android:name=".Item"
             android:exported="false" />
         <activity

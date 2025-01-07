@@ -209,14 +209,14 @@
                                 android:id="@+id/catimg4"
                                 android:layout_width="match_parent"
                                 android:layout_height="52dp"
-                                app:srcCompat="@drawable/c4tr" />
+                                app:srcCompat="@drawable/c3tr" />
 
                             <TextView
                                 android:id="@+id/cattext4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:text="Coffee Beans"
+                                android:text="Dessert"
                                 android:textAlignment="center"
                                 android:textColor="#372E20" />
                         </LinearLayout>
