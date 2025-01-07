@@ -2,7 +2,9 @@ package com.example.mochaalaa.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -12,9 +14,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.mochaalaa.CategoryHotCoffee;
+import com.example.mochaalaa.Loginpage;
+import com.example.mochaalaa.MainActivity;
 import com.example.mochaalaa.R;
 
 public class profile extends AppCompatActivity {
+    private ImageView goback;
+    private Button logout;
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -60,6 +67,24 @@ public class profile extends AppCompatActivity {
         if (userEmail != null) {
             emailViewLogout.setText(userEmail);
         }
+        goback=findViewById(R.id.pgoback);
+        goback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to Iced Coffee Category Activity
+                Intent intent = new Intent(profile.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        logout=findViewById(R.id.logOut);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to Iced Coffee Category Activity
+                Intent intent = new Intent(profile.this, Loginpage.class);
+                startActivity(intent);
+            }
+        });
 
 
 

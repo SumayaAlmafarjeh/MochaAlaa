@@ -41,6 +41,17 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/pgoback"
+            android:layout_width="66dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/goback"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
             android:id="@+id/logOutProfileicon"
             android:layout_width="209dp"
             android:layout_height="153dp"
