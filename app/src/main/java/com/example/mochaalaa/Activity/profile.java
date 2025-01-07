@@ -33,6 +33,7 @@ public class profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_profile);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -43,6 +44,28 @@ public class profile extends AppCompatActivity {
             Intent intent = new Intent(profile.this, map.class);
             startActivityForResult(intent, 1); // Using startActivityForResult for result handling
         });
+
+        TextView userNameLogOut = findViewById(R.id.userNameLogOut);
+        TextView emailViewLogout = findViewById(R.id.emailViewLogout);
+
+        // Get the data passed from MainActivity
+        Intent intent = getIntent();
+        String userName = intent.getStringExtra("USER_NAME");
+        String userEmail = intent.getStringExtra("USER_EMAIL");
+
+        // Set the values to the respective TextViews
+        if (userName != null) {
+            userNameLogOut.setText(userName);
+        }
+        if (userEmail != null) {
+            emailViewLogout.setText(userEmail);
+        }
+
+
+
+
+
+
 
     }
 }

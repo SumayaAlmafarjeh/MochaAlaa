@@ -1,6 +1,7 @@
 package com.example.mochaalaa;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -11,6 +12,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mochaalaa.Activity.breakfastCatActivity;
+import com.example.mochaalaa.Activity.profile;
 import com.example.mochaalaa.Activity.sweetCatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         Breakfast = findViewById(R.id.catimg3);
         // Get the name from the intent
         String userName = getIntent().getStringExtra("USERNAME");
+        String userEmail = getIntent().getStringExtra("USER_EMAIL");
+
 
         if (userName != null && !userName.isEmpty()) {
             usernameHomePage.setText("Hi " + userName);
@@ -77,10 +81,13 @@ public class MainActivity extends AppCompatActivity {
         bottomNav.findViewById(R.id.settings).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                setContentView(R.layout.activity_infosetter);
+                Intent intent = new Intent(MainActivity.this, profile.class);
+                intent.putExtra("USER_NAME", userName);
+                intent.putExtra("USER_EMAIL", userEmail);
+                startActivity(intent);
             }
         });
+
         //go to first category
         icedCoffee.setOnClickListener(new View.OnClickListener() {
             @Override
