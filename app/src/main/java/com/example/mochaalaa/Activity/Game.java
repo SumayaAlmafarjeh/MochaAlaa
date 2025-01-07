@@ -1,7 +1,9 @@
 package com.example.mochaalaa.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.View;
 import androidx.activity.EdgeToEdge;
@@ -10,11 +12,16 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.mochaalaa.CategoryHotCoffee;
+import com.example.mochaalaa.DetailHot2;
+import com.example.mochaalaa.MainActivity;
 import com.example.mochaalaa.R;
 
 import java.util.Random;
 
 public class Game extends AppCompatActivity {
+
+
     private String[] rolePlayTexts = {
             "Act as a pirate and describe your treasure!",
             "You're a chef, explain your new dish.",
@@ -145,11 +152,13 @@ public class Game extends AppCompatActivity {
             "What’s my favorite season of the year?"
     };
     private TextView gameTextDisplay;
+    private ImageView goback;
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_game);
@@ -157,6 +166,15 @@ public class Game extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        goback=findViewById(R.id.d16back);
+        goback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to Iced Coffee Category Activity
+                Intent intent = new Intent(Game.this, MainActivity.class);
+                startActivity(intent);
+            }
         });
         gameTextDisplay = findViewById(R.id.gameTextDisplay);
 

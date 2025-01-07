@@ -90,7 +90,7 @@
             android:layout_margin="15dp"
             android:orientation="horizontal">
 
-            <Button
+            <RadioButton
                 android:id="@+id/low"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -99,11 +99,12 @@
                 android:layout_weight="1"
                 android:backgroundTint="#1F4D2D"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="1dp"
                 android:text="small"
-                android:textColor="#F1E9E5" />
+                android:textStyle="bold"
+                android:textColor="#1F4D2D" />
 
-            <Button
+            <RadioButton
                 android:id="@+id/med"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -113,10 +114,11 @@
                 android:backgroundTint="#1F4D2D"
                 android:gravity="center"
                 android:padding="10dp"
+                android:textStyle="bold"
                 android:text="Medium"
-                android:textColor="#F1E9E5" />
+                android:textColor="#1F4D2D" />
 
-            <Button
+            <RadioButton
                 android:id="@+id/high"
                 android:layout_width="118dp"
                 android:layout_height="match_parent"
@@ -124,8 +126,9 @@
                 android:backgroundTint="#1F4D2D"
                 android:gravity="center"
                 android:padding="10dp"
+                android:textStyle="bold"
                 android:text="Large"
-                android:textColor="#F1E9E5" />
+                android:textColor="#1F4D2D" />
 
         </LinearLayout>
 
@@ -173,7 +176,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <Button
+                    <RadioButton
                         android:id="@+id/lowSugar"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -183,10 +186,11 @@
                         android:backgroundTint="#1F4D2D"
                         android:gravity="center"
                         android:padding="10dp"
+                        android:textStyle="bold"
                         android:text="Low"
-                        android:textColor="#F1E9E5" />
+                        android:textColor="#1F4D2D" />
 
-                    <Button
+                    <RadioButton
                         android:id="@+id/medSugar"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -196,10 +200,11 @@
                         android:backgroundTint="#1F4D2D"
                         android:gravity="center"
                         android:padding="10dp"
+                        android:textStyle="bold"
                         android:text="Medium"
-                        android:textColor="#F1E9E5" />
+                        android:textColor="#1F4D2D" />
 
-                    <Button
+                    <RadioButton
                         android:id="@+id/highSugar"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -208,7 +213,8 @@
                         android:gravity="center"
                         android:padding="10dp"
                         android:text="High"
-                        android:textColor="#F1E9E5" />
+                        android:textStyle="bold"
+                        android:textColor="#1F4D2D" />
 
                 </LinearLayout>
 

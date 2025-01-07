@@ -18,6 +18,12 @@
         android:theme="@style/Theme.MochaAlaa"
         tools:targetApi="31">
         <activity
+            android:name=".Item"
+            android:exported="false" />
+        <activity
+            android:name=".cart_page"
+            android:exported="false" />
+        <activity
             android:name=".SignupActivity"
             android:exported="false" />
         <activity
@@ -53,7 +59,6 @@
         <activity
             android:name=".DetailIced7"
             android:exported="false" />
-
         <activity
             android:name=".infosetter"
             android:exported="false" />
@@ -72,7 +77,6 @@
         <activity
             android:name=".Activity.sweetCatActivity"
             android:exported="false" />
-
         <activity
             android:name=".Activity.sweet1detail"
             android:exported="false" />
@@ -121,7 +125,6 @@
         <activity
             android:name=".Activity.breakfastCatActivity"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -143,11 +146,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-
-
-
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

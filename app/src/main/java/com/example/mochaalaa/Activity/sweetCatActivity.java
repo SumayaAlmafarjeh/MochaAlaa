@@ -4,17 +4,32 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mochaalaa.CategoryHotCoffee;
+import com.example.mochaalaa.DetailHot2;
+import com.example.mochaalaa.MainActivity;
 import com.example.mochaalaa.R;
 
 public class sweetCatActivity extends AppCompatActivity {
+    private ImageView goback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sweetscat); // Link the layout
+        goback=findViewById(R.id.hotD2);
+        goback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to Iced Coffee Category Activity
+                Intent intent = new Intent(sweetCatActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
         Button sweetButton1 = findViewById(R.id.d16viewDetail);
+
 
         // Set OnClickListener
         sweetButton1.setOnClickListener(new View.OnClickListener() {

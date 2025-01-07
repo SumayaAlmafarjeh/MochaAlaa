@@ -15,6 +15,16 @@
         android:background="#f1e9e5"
         tools:layout_editor_absoluteY="-25dp">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/rolePlayBtn"
             android:layout_width="200dp"
@@ -158,15 +168,16 @@ You Do If…?"
 
         <TextView
             android:id="@+id/gameTextDisplay"
-            android:layout_width="410dp"
-            android:layout_height="245dp"
+            android:layout_width="401dp"
+            android:layout_height="212dp"
 
-            android:textStyle="bold"
-            android:textColor="#09502f"
+            android:layout_marginTop="36dp"
             android:fontFamily="@font/newfont"
             android:gravity="center"
-            android:textSize="30dp"
             android:hint="Dive Into Fun and Make Lasting Memories!"
+            android:textColor="#09502f"
+            android:textSize="30dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -229,6 +240,18 @@ You Do If…?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.517" />
+
+        <ImageView
+            android:id="@+id/d16back"
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.005"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/goback"
+            tools:ignore="ContentDescription" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

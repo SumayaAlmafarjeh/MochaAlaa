@@ -31,6 +31,7 @@
 
             <!-- Items Section -->
             <LinearLayout
+                android:id="@+id/a1234"
                 android:layout_width="390dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -38,6 +39,7 @@
 
                 <!-- First Item -->
                 <LinearLayout
+                    android:id="@+id/firstlayoutcart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
@@ -479,7 +481,7 @@
 
             <!-- Checkout Button -->
             <Button
-                android:id="@+id/btnCheckout"
+                android:id="@+id/btnPayNow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Checkout"

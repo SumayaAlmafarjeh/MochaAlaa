@@ -10,9 +10,12 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mochaalaa.Activity.Game;
+import com.example.mochaalaa.Activity.PayPalConfig;
 import com.example.mochaalaa.Activity.breakfastCatActivity;
 import com.example.mochaalaa.Activity.sweetCatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 
 public class MainActivity extends AppCompatActivity {
     private TextView usernameHomePage;
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
 
 
         BottomNavigationView bottomNav = findViewById(R.id.bottomNav);
@@ -63,14 +67,16 @@ public class MainActivity extends AppCompatActivity {
         bottomNav.findViewById(R.id.cart).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_carttry);
+                Intent intent = new Intent(MainActivity.this, cart_page.class);
+                startActivity(intent);
             }
         });
 
         bottomNav.findViewById(R.id.game).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-               // setContentView(R.layout.activity_game);
+                Intent intent = new Intent(MainActivity.this, Game.class);
+                startActivity(intent);
             }
         });
 
@@ -116,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
     }
 }
