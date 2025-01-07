@@ -51,8 +51,8 @@
 
         <TextView
             android:id="@+id/userNameLogOut"
-            android:layout_width="198dp"
-            android:layout_height="24dp"
+            android:layout_width="199dp"
+            android:layout_height="36dp"
             android:layout_marginTop="6dp"
             android:gravity="center"
             android:text="User Name"
@@ -182,28 +182,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/passwordTextLogOut"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Password"
-                    android:textColor="#3e2623"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/changePasswordTextLogOut"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="change?"
-                    android:textAlignment="textEnd"
-                    android:textColor="#3e2623"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                android:orientation="horizontal"/>
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/lineBetweenPassAndPhone"

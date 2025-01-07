@@ -107,6 +107,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cursor.close();
         return name;
     }
+//for profile :
+    public Cursor getUserDetails(String email) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery("SELECT " + COL_ID + ", " + COL_NAME + ", " + COL_EMAIL + " FROM " + TABLE_NAME + " WHERE " + COL_EMAIL + " = ?", new String[]{email});
+    }
+
 
 
 /*

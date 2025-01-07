@@ -66,11 +66,14 @@ public class Loginpage extends AppCompatActivity {
         if (db.checkUser(email, password)) {
 
             String userName = db.getUserName(email);
+          
             Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show();
             //go to MainActivity
             Intent intent = new Intent(Loginpage.this, MainActivity.class);
             // Pass the name to MainActivity
-            intent.putExtra("USERNAME", userName); // Pass the name
+            intent.putExtra("USERNAME", userName); // Pass the nameintent.putExtra("USER_NAME", userName);
+            intent.putExtra("USER_EMAIL", email);
+
             startActivity(intent);
             finish(); // Close LoginActivity
         } else {
